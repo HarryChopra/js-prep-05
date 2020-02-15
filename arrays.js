@@ -29,6 +29,14 @@ const arraySum = arr => {
 	return arr[0];
 };
 
+// sum of the elements from 0 to n inclusive in an array arr
+const sum = (arr, n) => {
+	while (n > 0) {
+		return arr[n] + sum(arr, n - 1);
+	}
+	return arr[0];
+};
+
 // from nums 1-10
 const numSum = num => {
 	while (num > 1) {
